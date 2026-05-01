@@ -3,11 +3,22 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 const guides = [
-  "Where is summer now?",
-  "Best countries for UK students to work abroad",
-  "How to plan a work and travel year",
-  "Remote work abroad checklist",
-  "Cheap flights from the UK to sunny destinations",
+  {
+    title: "Where is summer now?",
+    href: "/guides/where-is-summer-now",
+  },
+  {
+    title: "Where to travel in December from the UK",
+    href: "/guides/where-to-travel-in-december-from-uk",
+  },
+  {
+    title: "Best countries for UK students to work abroad",
+    href: "#",
+  },
+  {
+    title: "How to plan a work and travel year",
+    href: "#",
+  },
 ];
 
 export default function GuidesPage() {
@@ -29,22 +40,30 @@ export default function GuidesPage() {
         </p>
 
         <div className="mt-10 grid gap-6">
-          {guides.map((guide) => (
-            <div key={guide} className="rounded-3xl bg-white p-6 shadow-lg">
-              {guide === "Where is summer now?" ? (
-  <Link href="/guides/where-is-summer-now">
-    <h2 className="text-2xl font-black text-orange-600 hover:underline">
-      {guide}
-    </h2>
-  </Link>
-) : (
-  <h2 className="text-2xl font-black">{guide}</h2>
+          {guides.map((guide) =>
+  guide.href === "#" ? (
+    <div
+      key={guide.title}
+      className="rounded-3xl bg-white p-6 shadow-lg opacity-70"
+    >
+      <h2 className="text-2xl font-black">{guide.title}</h2>
+      <p className="mt-2 text-slate-600">
+        Coming soon.
+      </p>
+    </div>
+  ) : (
+    <Link key={guide.title} href={guide.href}>
+      <div className="rounded-3xl bg-white p-6 shadow-lg hover:shadow-xl transition">
+        <h2 className="text-2xl font-black text-orange-600">
+          {guide.title}
+        </h2>
+        <p className="mt-2 text-slate-600">
+          Turn this into a long-form article with FAQs, destination links and affiliate modules.
+        </p>
+      </div>
+    </Link>
+  )
 )}
-              <p className="mt-2 text-slate-600">
-                Turn this into a long-form article with FAQs, destination links and affiliate modules.
-              </p>
-            </div>
-          ))}
         </div>
       </section>
 
