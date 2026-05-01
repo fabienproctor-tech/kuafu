@@ -9,9 +9,43 @@ export const metadata = {
 };
 
 export default function DecemberGuidePage() {
-  return (
+  const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Where is hot in December from the UK?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Popular sunny destinations from the UK in December include Australia, Bali, Thailand, the Canary Islands, South Africa and parts of the Caribbean.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where is the best place to travel in December for students?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "For students, good December options include the Canary Islands for shorter trips, Thailand and Bali for budget travel, and Australia for longer working-holiday plans.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I work abroad in December?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You may be able to work abroad in December depending on the country, visa rules and the type of work. Always check work rights before applying for jobs or travelling.",
+      },
+    },
+  ],
+};
+return (
     <main className="min-h-screen bg-orange-50">
       <Header />
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+/>
 
       <article className="mx-auto max-w-4xl px-5 py-16">
         <p className="font-black uppercase tracking-widest text-orange-600">
@@ -147,7 +181,44 @@ export default function DecemberGuidePage() {
             </Link>
           </div>
         </section>
+        
+<section className="mt-12 rounded-3xl bg-white p-6 shadow-lg">
+  <h2 className="text-3xl font-black">FAQs</h2>
 
+  <div className="mt-6 space-y-5">
+    <div>
+      <h3 className="text-xl font-black">
+        Where is hot in December from the UK?
+      </h3>
+      <p className="mt-2 text-slate-600">
+        Popular sunny destinations from the UK in December include Australia,
+        Bali, Thailand, the Canary Islands, South Africa and parts of the Caribbean.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-black">
+        Where is the best place to travel in December for students?
+      </h3>
+      <p className="mt-2 text-slate-600">
+        For students, good December options include the Canary Islands for shorter
+        trips, Thailand and Bali for budget travel, and Australia for longer
+        working-holiday plans.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-black">
+        Can I work abroad in December?
+      </h3>
+      <p className="mt-2 text-slate-600">
+        You may be able to work abroad in December depending on the country, visa
+        rules and the type of work. Always check work rights before applying for
+        jobs or travelling.
+      </p>
+    </div>
+  </div>
+</section>
       </article>
 
       <Footer />
