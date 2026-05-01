@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,7 +10,7 @@ import {
   getJobLink,
 } from "@/lib/searchLinks";
 
-export default function SearchPage() {
+function SearchContent() {
   const searchParams = useSearchParams();
   const [destination, setDestination] = useState("");
 
@@ -65,5 +65,13 @@ export default function SearchPage() {
 
       <Footer />
     </main>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<p className="p-10">Loading search...</p>}>
+      <SearchContent />
+    </Suspense>
   );
 }
