@@ -1,0 +1,34 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+export default function HomePage() {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50 to-sky-50 text-slate-900">
+      <Header />
+
+      <section className="px-5 py-20 text-center relative">
+        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-orange-300 via-yellow-200 to-sky-200 blur-2xl opacity-40"></div>
+        <img
+  src="/kuafu-logo.png"
+  alt="Kuafu - Chasing the Sun"
+  className="mx-auto h-40 w-auto"
+/>
+
+        <p className="mx-auto mt-6 max-w-2xl text-xl text-slate-600">
+          Find flights, places to stay and jobs abroad — and follow summer around the world.
+        </p>
+
+        <div className="mt-10 flex justify-center gap-4">
+          <a href="/search" className="rounded-2xl bg-orange-500 hover:bg-orange-600 transition px-6 py-4 font-bold text-white">
+            Start Searching
+          </a>
+          <a href="/guides" className="rounded-2xl border px-6 py-4 font-bold">
+            Explore Guides
+          </a>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
+}
