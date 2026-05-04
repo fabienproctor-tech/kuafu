@@ -16,8 +16,8 @@ const guides = [
     href: "/guides/best-countries-to-work-abroad-uk",
   },
   {
-    title: "How to plan a work and travel year",
-    href: "#",
+    title: "Cheap summer destinations in Europe",
+    href: "/guides/cheap-summer-destinations-europe",
   },
 ];
 
