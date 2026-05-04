@@ -12,8 +12,8 @@ const guides = [
     href: "/guides/where-to-travel-in-december-from-uk",
   },
   {
-    title: "Best countries for UK students to work abroad",
-    href: "#",
+    title: "Best countries to work abroad from the UK",
+    href: "/guides/best-countries-to-work-abroad-uk",
   },
   {
     title: "How to plan a work and travel year",
