@@ -27,5 +27,9 @@ export function getHotelLink(destination: string) {
 }
 
 export function getJobLink(destination: string) {
-  return `https://www.adzuna.co.uk/search/results?where=${encodeURIComponent(destination)}&utm_source=kuafu`;
+  const city = destination.split(",")[0].trim();
+
+  return `https://www.adzuna.co.uk/search/results?where=${encodeURIComponent(
+    city
+  )}&utm_source=kuafu`;
 }
