@@ -30,33 +30,40 @@ function SearchContent() {
 
         <input
           type="text"
-          placeholder="Enter a country or city (e.g. Portugal)"
+          placeholder="Enter a city or country (e.g. Lisbon)"
           className="mt-6 w-full rounded-2xl border p-4"
           value={destination}
           onChange={(e) => setDestination(e.target.value)}
         />
 
+        <p className="mt-2 text-sm text-slate-500">
+          Tip: for better job results, enter a city such as Lisbon, Barcelona or Sydney.
+        </p>
+
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           <a
-            className="rounded-3xl bg-white p-6 shadow-lg"
+            className="rounded-3xl bg-white p-6 shadow-lg hover:shadow-xl transition"
             href={getFlightLink(destination)}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <h2 className="text-2xl font-black">Flights</h2>
           </a>
 
           <a
-            className="rounded-3xl bg-white p-6 shadow-lg"
+            className="rounded-3xl bg-white p-6 shadow-lg hover:shadow-xl transition"
             href={getHotelLink(destination)}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <h2 className="text-2xl font-black">Hotels</h2>
           </a>
 
           <a
-            className="rounded-3xl bg-white p-6 shadow-lg"
+            className="rounded-3xl bg-white p-6 shadow-lg hover:shadow-xl transition"
             href={getJobLink(destination)}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <h2 className="text-2xl font-black">Jobs</h2>
           </a>
