@@ -8,24 +8,23 @@ export default function Footer() {
       <Link href="/">
         <img
           src="/kuafu-logo.png"
-          alt="Kuafu - Chasing the Sun"
+          alt="Kuafu - Follow the light. Find your path."
           className="h-10 w-auto opacity-80 hover:opacity-100 transition"
         />
       </Link>
 
       {/* Tagline */}
-      <p className="text-xs tracking-wide text-gray-500">
-  CHASING THE SUN
-</p>
+      <p className="text-sm text-slate-600">
+        Follow the light. Find your path.
+      </p>
 
       {/* Copyright */}
       <p>© {new Date().getFullYear()} Kuafu</p>
 
-<p className="text-xs text-gray-400 mt-2">
-  Kuafu may earn commission from links to travel and job partners.
-</p>
+      <p className="text-xs text-gray-400 mt-2">
+        Kuafu may earn commission from links to travel and job partners.
+      </p>
 
     </footer>
   );
-  
 }
