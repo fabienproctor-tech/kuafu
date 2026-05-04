@@ -3,11 +3,11 @@ import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50 to-sky-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-blue-50 to-blue-100 text-slate-900">
       <Header />
 
       <section className="px-5 py-20 text-center relative">
-        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-orange-300 via-yellow-200 to-sky-200 blur-2xl opacity-40"></div>
+        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-blue-200 via-white to-blue-100 blur-2xl opacity-40"></div>
         <img
   src="/kuafu-logo.png"
   alt="Kuafu - Chasing the Sun"
