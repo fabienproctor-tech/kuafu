@@ -3,11 +3,11 @@ import Footer from "@/components/Footer";
 
 export default function DestinationsPage() {
   return (
-    <main className="min-h-screen bg-orange-50">
+    <main className="min-h-screen bg-blue-50">
       <Header />
 
       <section className="mx-auto max-w-6xl px-5 py-16">
-        <p className="font-black uppercase tracking-widest text-orange-600">
+        <p className="font-black uppercase tracking-widest text-blue-600">
           Destinations
         </p>
 

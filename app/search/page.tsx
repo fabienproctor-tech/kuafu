@@ -20,7 +20,7 @@ function SearchContent() {
   }, [searchParams]);
 
   return (
-    <main className="min-h-screen bg-orange-50">
+    <main className="min-h-screen bg-blue-50">
       <Header />
 
       <section className="mx-auto max-w-5xl px-5 py-16">

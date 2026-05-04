@@ -20,11 +20,11 @@ export default function RouteGeneratorPage() {
   const [month, setMonth] = useState("June");
 
   return (
-    <main className="min-h-screen bg-orange-50">
+    <main className="min-h-screen bg-blue-50">
       <Header />
 
       <section className="mx-auto max-w-5xl px-5 py-16">
-        <p className="font-black uppercase tracking-widest text-orange-600">
+        <p className="font-black uppercase tracking-widest text-blue-600">
           Route Generator
         </p>
 
@@ -62,7 +62,7 @@ export default function RouteGeneratorPage() {
                 <a
                   href={`/search?destination=${encodeURIComponent(place)}`}
                   target="_blank"
-                  className="rounded-2xl bg-orange-500 hover:bg-orange-600 transition px-5 py-3 font-bold text-white">
+                  className="rounded-2xl bg-blue-600 hover:bg-blue-700 transition px-5 py-3 font-bold text-white">
                   Search flights
                 </a>
 

@@ -23,11 +23,11 @@ const guides = [
 
 export default function GuidesPage() {
   return (
-    <main className="min-h-screen bg-orange-50">
+    <main className="min-h-screen bg-blue-50">
       <Header />
 
       <section className="mx-auto max-w-6xl px-5 py-16">
-        <p className="font-black uppercase tracking-widest text-orange-600">
+        <p className="font-black uppercase tracking-widest text-blue-600">
           Guides
         </p>
 
@@ -54,7 +54,7 @@ export default function GuidesPage() {
   ) : (
     <Link key={guide.title} href={guide.href}>
       <div className="rounded-3xl bg-white p-6 shadow-lg hover:shadow-xl transition">
-        <h2 className="text-2xl font-black text-orange-600">
+        <h2 className="text-2xl font-black text-blue-600">
           {guide.title}
         </h2>
         <p className="mt-2 text-slate-600">

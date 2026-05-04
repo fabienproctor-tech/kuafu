@@ -41,7 +41,7 @@ export default function WorkAbroadGuidePage() {
   };
 
   return (
-    <main className="min-h-screen bg-orange-50">
+    <main className="min-h-screen bg-blue-50">
       <Header />
 
       <script
@@ -50,7 +50,7 @@ export default function WorkAbroadGuidePage() {
       />
 
       <article className="mx-auto max-w-4xl px-5 py-16">
-        <p className="font-black uppercase tracking-widest text-orange-600">
+        <p className="font-black uppercase tracking-widest text-blue-600">
           Kuafu Guide
         </p>
 
@@ -69,7 +69,7 @@ export default function WorkAbroadGuidePage() {
         <div className="mt-6">
           <Link
             href="/route-generator"
-            className="inline-block rounded-2xl bg-orange-500 hover:bg-orange-600 px-6 py-4 font-bold text-white"
+            className="inline-block rounded-2xl bg-blue-600 hover:bg-blue-700 px-6 py-4 font-bold text-white"
           >
             Generate your work & travel route
           </Link>
@@ -91,7 +91,7 @@ export default function WorkAbroadGuidePage() {
             </p>
 
             <div className="mt-5 flex gap-3 flex-wrap">
-              <Link href="/search?destination=Australia" className="rounded-2xl bg-orange-500 px-5 py-3 font-bold text-white">
+              <Link href="/search?destination=Australia" className="rounded-2xl bg-blue-600 px-5 py-3 font-bold text-white">
                 Search flights
               </Link>
               <Link href="/search?destination=Australia" className="rounded-2xl bg-slate-900 px-5 py-3 font-bold text-white">
@@ -116,7 +116,7 @@ export default function WorkAbroadGuidePage() {
             </p>
 
             <div className="mt-5 flex gap-3 flex-wrap">
-              <Link href="/search?destination=Canada" className="rounded-2xl bg-orange-500 px-5 py-3 font-bold text-white">
+              <Link href="/search?destination=Canada" className="rounded-2xl bg-blue-600 px-5 py-3 font-bold text-white">
                 Search flights
               </Link>
               <Link href="/search?destination=Canada" className="rounded-2xl bg-slate-900 px-5 py-3 font-bold text-white">
@@ -141,7 +141,7 @@ export default function WorkAbroadGuidePage() {
             </p>
 
             <div className="mt-5 flex gap-3 flex-wrap">
-              <Link href="/search?destination=Dubai" className="rounded-2xl bg-orange-500 px-5 py-3 font-bold text-white">
+              <Link href="/search?destination=Dubai" className="rounded-2xl bg-blue-600 px-5 py-3 font-bold text-white">
                 Search flights
               </Link>
               <Link href="/search?destination=Dubai" className="rounded-2xl bg-slate-900 px-5 py-3 font-bold text-white">
@@ -166,7 +166,7 @@ export default function WorkAbroadGuidePage() {
             </p>
 
             <div className="mt-5 flex gap-3 flex-wrap">
-              <Link href="/search?destination=Spain" className="rounded-2xl bg-orange-500 px-5 py-3 font-bold text-white">
+              <Link href="/search?destination=Spain" className="rounded-2xl bg-blue-600 px-5 py-3 font-bold text-white">
                 Search flights
               </Link>
               <Link href="/search?destination=Spain" className="rounded-2xl bg-slate-900 px-5 py-3 font-bold text-white">
@@ -193,7 +193,7 @@ export default function WorkAbroadGuidePage() {
           <div className="mt-6">
             <Link
               href="/search"
-              className="rounded-2xl bg-orange-500 px-6 py-4 font-bold text-white"
+              className="rounded-2xl bg-blue-600 px-6 py-4 font-bold text-white"
             >
               Start searching
             </Link>

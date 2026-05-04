@@ -22,9 +22,9 @@
 body {
   background: linear-gradient(
     to bottom,
-    #fff7ed,   /* warm light orange */
-    #fde68a,   /* sunlight */
-    #e0f2fe    /* sky blue */
+    #ffffff,
+    #eff6ff,
+    #dbeafe
   );
   color: #0f172a;
 }

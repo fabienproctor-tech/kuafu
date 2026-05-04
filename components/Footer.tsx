@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mt-10 flex flex-col items-center gap-3 p-6 text-sm text-gray-600">
+    <footer className="mt-10 flex flex-col items-center gap-3 bg-white p-6 text-sm text-slate-600">
       
       {/* Clickable Logo */}
       <Link href="/">

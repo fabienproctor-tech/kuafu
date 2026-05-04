@@ -40,14 +40,14 @@ export default function WhereIsSummerNowPage() {
   ]
 };
     return (
-    <main className="min-h-screen bg-orange-50">
+    <main className="min-h-screen bg-blue-50">
       <Header />
 <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
 />
       <article className="mx-auto max-w-4xl px-5 py-16">
-        <p className="font-black uppercase tracking-widest text-orange-600">
+        <p className="font-black uppercase tracking-widest text-blue-600">
           Kuafu Guide
         </p>
 
@@ -112,7 +112,7 @@ export default function WhereIsSummerNowPage() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/route-generator"
-              className="rounded-2xl bg-orange-500 hover:bg-orange-600 transition px-5 py-3 font-bold text-white"
+              className="rounded-2xl bg-blue-600 hover:bg-blue-700 transition px-5 py-3 font-bold text-white"
             >
               Try the route generator
             </Link>

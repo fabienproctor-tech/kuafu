@@ -19,7 +19,7 @@ export default function HomePage() {
         </p>
 
         <div className="mt-10 flex justify-center gap-4">
-          <a href="/search" className="rounded-2xl bg-orange-500 hover:bg-orange-600 transition px-6 py-4 font-bold text-white">
+          <a href="/search" className="rounded-2xl bg-blue-600 hover:bg-blue-700 transition px-6 py-4 font-bold text-white">
             Start Searching
           </a>
           <a href="/guides" className="rounded-2xl border px-6 py-4 font-bold">

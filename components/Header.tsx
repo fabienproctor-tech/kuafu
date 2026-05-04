@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between bg-[#faf7ef] p-5 shadow-md rounded-b-2xl">
+    <header className="flex items-center justify-between bg-white p-5 shadow-md rounded-b-2xl">
       
       {/* Clickable Logo */}
       <Link href="/">
