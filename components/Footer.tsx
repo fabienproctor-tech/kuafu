@@ -18,6 +18,19 @@ export default function Footer() {
         Follow the light. Find your path.
       </p>
 
+<div className="flex items-center gap-2 mt-2">
+  <span className="text-xs text-slate-500">Follow:</span>
+  <a
+    href="https://www.instagram.com/kuafutravel/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:text-blue-800 text-sm"
+  >
+    Instagram
+  </a>
+</div>
+
+
       {/* Copyright */}
       <p>© {new Date().getFullYear()} Kuafu</p>
 
