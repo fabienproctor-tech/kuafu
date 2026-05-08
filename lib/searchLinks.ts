@@ -3,7 +3,7 @@ const flightCodes: Record<string, string> = {
   barcelona: "bcn",
   sydney: "syd",
   bali: "dps",
-  thailand: "bkkt",
+  thailand: "bkk",
   dubai: "dxb",
   canada: "yvr",
   australia: "syd",
@@ -29,29 +29,25 @@ export function getHotelLink(destination: string) {
 export function getJobLink(destination: string) {
   const key = destination.toLowerCase();
 
+  if (key.includes("spain") || key.includes("barcelona")) {
+    return "https://jobs.goabroad.com/search/spain/barcelona/jobs-abroad-1";
+  }
+
   if (key.includes("australia") || key.includes("sydney")) {
-    return "https://www.gooverseas.com/work-abroad/australia";
+    return "https://www.gooverseas.com/work-abroad";
   }
 
   if (key.includes("thailand") || key.includes("bangkok")) {
     return "https://www.gooverseas.com/teach-abroad/thailand";
   }
 
-  if (key.includes("spain") || key.includes("barcelona")) {
-    return "https://www.gooverseas.com/work-abroad/spain";
-  }
-
   if (key.includes("portugal") || key.includes("lisbon")) {
-    return "https://www.gooverseas.com/work-abroad/portugal";
+    return "https://www.gooverseas.com/work-abroad";
   }
 
   if (key.includes("canada")) {
-    return "https://www.gooverseas.com/work-abroad/canada";
+    return "https://www.gooverseas.com/work-abroad";
   }
 
-  if (key.includes("dubai") || key.includes("uae")) {
-    return "https://www.gooverseas.com/";
-  }
-
-  return "https://www.gooverseas.com/";
+  return "https://www.gooverseas.com/work-abroad";
 }
