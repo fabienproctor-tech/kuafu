@@ -79,7 +79,7 @@ export default function RouteGeneratorPage() {
                   target="_blank"
                   className="rounded-2xl border border-slate-300 px-5 py-3 font-bold"
                 >
-                  Find jobs
+                  Work & Travel
                 </a>
               </div>
             </div>
