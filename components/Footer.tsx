@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -18,15 +19,25 @@ export default function Footer() {
         Follow the light. Find your path.
       </p>
 
-<div className="flex items-center gap-2 mt-2">
-  <span className="text-xs text-slate-500">Follow:</span>
+<div className="flex gap-4 text-blue-900">
   <a
     href="https://www.instagram.com/kuafutravel/"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-600 hover:text-blue-800 text-sm"
+    aria-label="Instagram"
+    className="hover:text-orange-500 transition"
   >
-    Instagram
+    <FaInstagram size={20} />
+  </a>
+
+  <a
+    href="https://www.facebook.com/kuafutravel/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+    className="hover:text-orange-500 transition"
+  >
+    <FaFacebook size={20} />
   </a>
 </div>
 
