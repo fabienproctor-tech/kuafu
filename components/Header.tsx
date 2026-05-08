@@ -15,7 +15,7 @@ export default function Header() {
         <nav className="flex flex-wrap justify-center gap-3 text-sm font-semibold text-slate-700 md:gap-4">
           <Link href="/search">Search</Link>
           <Link href="/destinations">Destinations</Link>
-          <Link href="/jobs">Jobs</Link>
+          <Link href="/jobs">Work Abroad</Link>
           <Link href="/guides">Guides</Link>
           <Link href="/route-generator">Route Generator</Link>
           <Link href="/about">About</Link>

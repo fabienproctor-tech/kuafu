@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = {
   title: "About Kuafu | Chase the Sun",
   description:
-    "Learn about Kuafu, a travel platform helping people find flights, stays and jobs abroad while following the sun.",
+    "Learn about Kuafu, a travel platform helping people find flights, stays and work abroad opportunities while following the sun.",
 };
 
 export default function AboutPage() {
@@ -32,7 +32,7 @@ export default function AboutPage() {
         <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
           We help UK students, graduates, young professionals and flexible
           travellers discover destinations, compare flights and stays, and find
-          jobs abroad. Whether you want a short sunny escape, a working holiday,
+          work abroad opportunities. Whether you want a short sunny escape, a working holiday,
           a remote-work base or a longer route around the world, Kuafu is built
           to help you move with the seasons.
         </p>

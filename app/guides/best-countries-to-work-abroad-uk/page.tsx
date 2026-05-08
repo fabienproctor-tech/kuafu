@@ -98,7 +98,7 @@ export default function WorkAbroadGuidePage() {
                 Find hotels
               </Link>
               <Link href="/search?destination=Australia" className="rounded-2xl border px-5 py-3 font-bold">
-                Find jobs
+                Work abroad
               </Link>
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function WorkAbroadGuidePage() {
                 Find hotels
               </Link>
               <Link href="/search?destination=Canada" className="rounded-2xl border px-5 py-3 font-bold">
-                Find jobs
+                Work abroad
               </Link>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function WorkAbroadGuidePage() {
                 Find hotels
               </Link>
               <Link href="/search?destination=Dubai" className="rounded-2xl border px-5 py-3 font-bold">
-                Find jobs
+                Work abroad
               </Link>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function WorkAbroadGuidePage() {
                 Find hotels
               </Link>
               <Link href="/search?destination=Spain" className="rounded-2xl border px-5 py-3 font-bold">
-                Find jobs
+                Work abroad
               </Link>
             </div>
           </div>

@@ -15,7 +15,7 @@ export default function HomePage() {
 />
 
         <p className="mx-auto mt-6 max-w-2xl text-xl text-slate-600">
-          Find flights, places to stay and jobs abroad — and follow summer around the world.
+          Find flights, places to stay and work abroad opportunities — and follow summer around the world.
         </p>
 
         <div className="mt-10 flex justify-center gap-4">

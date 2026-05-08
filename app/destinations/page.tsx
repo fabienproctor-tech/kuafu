@@ -158,7 +158,7 @@ export default function DestinationsPage() {
                     href={`/search?destination=${destination.search}`}
                     className="rounded-2xl border border-slate-300 px-5 py-3 font-bold hover:bg-blue-50"
                   >
-                    Find jobs
+                    Work abroad
                   </Link>
                 </div>
               </div>

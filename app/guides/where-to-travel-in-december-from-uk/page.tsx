@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Where to Travel in December from the UK | Kuafu",
   description:
-    "Discover the best sunny destinations in December for UK travellers. Find flights, hotels and jobs abroad with Kuafu.",
+    "Discover the best sunny destinations in December for UK travellers. Find flights, hotels and work abroad opportunities with Kuafu.",
 };
 
 export default function DecemberGuidePage() {
@@ -58,7 +58,7 @@ return (
 
         <p className="mt-5 text-xl leading-8 text-slate-600">
           December is the perfect time to escape the cold UK weather and follow the sun.
-          Whether you are looking for beaches, remote work or seasonal jobs abroad,
+          Whether you are looking for beaches, remote work or seasonal work abroad opportunities,
           these destinations offer the best mix of sunshine, travel opportunities and lifestyle.
         </p>
 
@@ -92,7 +92,7 @@ return (
                 href="/search?destination=Sydney"
                 className="rounded-2xl border px-5 py-3 font-bold"
               >
-                Find jobs
+                Work abroad
               </Link>
             </div>
           </div>
@@ -113,7 +113,7 @@ return (
                 Find hotels
               </Link>
               <Link href="/search?destination=Bali" className="rounded-2xl border px-5 py-3 font-bold">
-                Find jobs
+                Work abroad
               </Link>
             </div>
           </div>
@@ -134,7 +134,7 @@ return (
                 Find hotels
               </Link>
               <Link href="/search?destination=Thailand" className="rounded-2xl border px-5 py-3 font-bold">
-                Find jobs
+                Work abroad
               </Link>
             </div>
           </div>
@@ -155,7 +155,7 @@ return (
                 Find hotels
               </Link>
               <Link href="/search?destination=Canary Islands" className="rounded-2xl border px-5 py-3 font-bold">
-                Find jobs
+                Work abroad
               </Link>
             </div>
           </div>

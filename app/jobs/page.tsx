@@ -3,9 +3,9 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Jobs Abroad for UK Travellers | Kuafu",
+  title: "Work Abroad for UK Travellers | Kuafu",
   description:
-    "Explore remote work, seasonal jobs, hospitality roles and internships abroad for UK students, graduates and young professionals.",
+    "Explore work abroad opportunities, seasonal roles, hospitality jobs, internships and travel programmes for UK students, graduates and young professionals.",
 };
 
 const jobs = [
@@ -68,17 +68,17 @@ export default function JobsPage() {
         <div className="absolute inset-0 flex items-center">
           <div className="mx-auto max-w-6xl px-5 text-white">
             <p className="font-black uppercase tracking-widest text-blue-300">
-              Jobs Abroad
+              Work Abroad
             </p>
 
             <h1 className="mt-3 max-w-3xl text-5xl font-black leading-tight">
-              Find work that helps fund the journey
+              Work abroad while you travel
             </h1>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-200">
-              Explore remote work, seasonal roles, hospitality jobs and
-              internships abroad for UK travellers, students and young
-              professionals.
+              Explore work abroad opportunities, seasonal roles, hospitality jobs,
+internships and travel programmes for UK travellers, students and young
+professionals.
             </p>
 
             <div className="mt-8">
@@ -86,7 +86,7 @@ export default function JobsPage() {
                 href="/search"
                 className="rounded-2xl bg-blue-600 px-6 py-4 font-bold text-white hover:bg-blue-700"
               >
-                Search jobs abroad
+                Explore work abroad
               </Link>
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function JobsPage() {
                     href={`/search?destination=${job.search}`}
                     className="rounded-2xl bg-blue-600 px-5 py-3 font-bold text-white hover:bg-blue-700"
                   >
-                    Search jobs
+                    Explore opportunities
                   </Link>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function JobsPage() {
 
         <section className="mt-14 rounded-3xl bg-white p-8 shadow-lg">
           <h2 className="text-3xl font-black">
-            Tips for finding jobs abroad
+            Tips for finding work abroad opportunities
           </h2>
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -185,7 +185,7 @@ export default function JobsPage() {
           </h2>
 
           <p className="mt-4 max-w-2xl text-slate-300">
-            Discover sunny destinations, search for jobs abroad and build your
+            Discover sunny destinations, search for work abroad opportunities and build your
             own route around the world.
           </p>
 

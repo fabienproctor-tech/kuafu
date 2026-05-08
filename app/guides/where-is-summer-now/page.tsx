@@ -26,7 +26,7 @@ export default function WhereIsSummerNowPage() {
       "name": "Can I work while travelling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the country, visa rules and your type of work. You should always check work rights before applying for jobs abroad."
+        "text": "It depends on the country, visa rules and your type of work. You should always check work rights before applying for work abroad opportunities."
       }
     },
     {
@@ -146,7 +146,7 @@ export default function WhereIsSummerNowPage() {
               </h3>
               <p className="mt-2 text-slate-600">
                 It depends on the country, visa rules and your type of work. You
-                should always check work rights before applying for jobs abroad.
+                should always check work rights before applying for work abroad opportunities.
               </p>
             </div>
 

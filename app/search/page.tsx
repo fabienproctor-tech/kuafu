@@ -37,7 +37,7 @@ function SearchContent() {
         />
 
         <p className="mt-2 text-sm text-slate-500">
-          Tip: for better job results, enter a city such as Lisbon, Barcelona or Sydney.
+          Tip: for better work abroad results, enter a city or country such as Lisbon, Barcelona, Sydney or Australia.
         </p>
 
         <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -65,7 +65,7 @@ function SearchContent() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className="text-2xl font-black">Jobs</h2>
+            <h2 className="text-2xl font-black">Work Abroad</h2>
           </a>
         </div>
       </section>

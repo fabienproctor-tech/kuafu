@@ -27,9 +27,31 @@ export function getHotelLink(destination: string) {
 }
 
 export function getJobLink(destination: string) {
-  const city = destination.split(",")[0].trim();
+  const key = destination.toLowerCase();
 
-  return `https://www.adzuna.co.uk/search/results?where=${encodeURIComponent(
-    city
-  )}&utm_source=kuafu`;
+  if (key.includes("australia") || key.includes("sydney")) {
+    return "https://www.gooverseas.com/work-abroad/australia";
+  }
+
+  if (key.includes("thailand") || key.includes("bangkok")) {
+    return "https://www.gooverseas.com/teach-abroad/thailand";
+  }
+
+  if (key.includes("spain") || key.includes("barcelona")) {
+    return "https://www.gooverseas.com/work-abroad/spain";
+  }
+
+  if (key.includes("portugal") || key.includes("lisbon")) {
+    return "https://www.gooverseas.com/work-abroad/portugal";
+  }
+
+  if (key.includes("canada")) {
+    return "https://www.gooverseas.com/work-abroad/canada";
+  }
+
+  if (key.includes("dubai") || key.includes("uae")) {
+    return "https://www.gooverseas.com/";
+  }
+
+  return "https://www.gooverseas.com/";
 }
