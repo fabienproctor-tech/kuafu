@@ -8,148 +8,185 @@ export const metadata = {
     "Explore remote work, seasonal jobs, hospitality roles and internships abroad for UK students, graduates and young professionals.",
 };
 
+const jobs = [
+  {
+    title: "Remote Work",
+    image:
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Work from anywhere while travelling. Popular remote jobs include digital marketing, customer support, content writing, design and tech roles.",
+    bestFor: "Digital nomads and long-term travellers",
+    locations: "Lisbon, Bali, Thailand",
+    search: "Lisbon",
+  },
+  {
+    title: "Seasonal Jobs",
+    image:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Seasonal work is ideal for summer travel and gap years. Find opportunities in tourism, events, resorts and activity companies.",
+    bestFor: "Gap years and short-term travel",
+    locations: "Barcelona, Greece, Croatia",
+    search: "Barcelona",
+  },
+  {
+    title: "Hospitality",
+    image:
+      "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Hospitality is one of the easiest ways to work abroad while meeting people and experiencing new destinations.",
+    bestFor: "Social travellers and students",
+    locations: "Sydney, Split, Dubai",
+    search: "Sydney",
+  },
+  {
+    title: "Internships",
+    image:
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Build international experience through internships in business, marketing, finance, tourism and operations.",
+    bestFor: "Students and graduates",
+    locations: "London, Dubai, Singapore",
+    search: "London",
+  },
+];
+
 export default function JobsPage() {
   return (
     <main className="min-h-screen bg-blue-50">
       <Header />
 
+      <section className="relative overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+          alt="Work abroad"
+          className="h-[500px] w-full object-cover"
+        />
+
+        <div className="absolute inset-0 bg-black/50" />
+
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-auto max-w-6xl px-5 text-white">
+            <p className="font-black uppercase tracking-widest text-blue-300">
+              Jobs Abroad
+            </p>
+
+            <h1 className="mt-3 max-w-3xl text-5xl font-black leading-tight">
+              Find work that helps fund the journey
+            </h1>
+
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-200">
+              Explore remote work, seasonal roles, hospitality jobs and
+              internships abroad for UK travellers, students and young
+              professionals.
+            </p>
+
+            <div className="mt-8">
+              <Link
+                href="/search"
+                className="rounded-2xl bg-blue-600 px-6 py-4 font-bold text-white hover:bg-blue-700"
+              >
+                Search jobs abroad
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-5 py-16">
-        <p className="font-black uppercase tracking-widest text-blue-600">
-          Jobs Abroad
-        </p>
+        <div className="grid gap-8 md:grid-cols-2">
+          {jobs.map((job) => (
+            <div
+              key={job.title}
+              className="overflow-hidden rounded-3xl bg-white shadow-lg"
+            >
+              <img
+                src={job.image}
+                alt={job.title}
+                className="h-64 w-full object-cover"
+              />
 
-        <h1 className="mt-2 text-5xl font-black text-slate-950">
-          Find work that helps fund the journey
-        </h1>
+              <div className="p-6">
+                <h2 className="text-3xl font-black text-slate-950">
+                  {job.title}
+                </h2>
 
-        <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-          Kuafu helps UK students, graduates and young professionals discover
-          work opportunities that fit around travel. Search for remote roles,
-          seasonal jobs, hospitality work, internships and working-holiday
-          opportunities abroad.
-        </p>
+                <p className="mt-4 leading-7 text-slate-600">
+                  {job.description}
+                </p>
 
-        <div className="mt-8">
-          <Link
-            href="/search"
-            className="inline-block rounded-2xl bg-blue-600 px-6 py-4 font-bold text-white hover:bg-blue-700"
-          >
-            Search jobs abroad
-          </Link>
+                <div className="mt-5 space-y-2 rounded-2xl bg-blue-50 p-4 text-sm text-slate-600">
+                  <p>
+                    <strong>Best for:</strong> {job.bestFor}
+                  </p>
+
+                  <p>
+                    <strong>Popular locations:</strong> {job.locations}
+                  </p>
+                </div>
+
+                <div className="mt-6">
+                  <Link
+                    href={`/search?destination=${job.search}`}
+                    className="rounded-2xl bg-blue-600 px-5 py-3 font-bold text-white hover:bg-blue-700"
+                  >
+                    Search jobs
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <section className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="rounded-3xl bg-white p-6 shadow-lg">
-            <h2 className="text-2xl font-black">Remote Work</h2>
-            <p className="mt-3 text-slate-600">
-              Best for travellers who want flexibility. Look for digital
-              marketing, admin, customer support, freelance, content and tech
-              roles that can be done online.
-            </p>
-            <p className="mt-3 text-sm text-slate-500">
-              Best for: Digital nomads, students, graduates and freelancers.
-            </p>
-            <Link
-              href="/search?destination=Lisbon"
-              className="mt-5 inline-block rounded-2xl border px-5 py-3 font-bold hover:bg-blue-50"
-            >
-              Search remote jobs
-            </Link>
-          </div>
-
-          <div className="rounded-3xl bg-white p-6 shadow-lg">
-            <h2 className="text-2xl font-black">Seasonal Jobs</h2>
-            <p className="mt-3 text-slate-600">
-              Seasonal jobs are ideal for summer travel. Common options include
-              resorts, campsites, events, tour operators, hostels and activity
-              companies.
-            </p>
-            <p className="mt-3 text-sm text-slate-500">
-              Best for: Summer breaks, gap years and short-term travel.
-            </p>
-            <Link
-              href="/search?destination=Barcelona"
-              className="mt-5 inline-block rounded-2xl border px-5 py-3 font-bold hover:bg-blue-50"
-            >
-              Search seasonal jobs
-            </Link>
-          </div>
-
-          <div className="rounded-3xl bg-white p-6 shadow-lg">
-            <h2 className="text-2xl font-black">Hospitality</h2>
-            <p className="mt-3 text-slate-600">
-              Hospitality can be one of the easiest ways to work while travelling.
-              Search for roles in hotels, bars, cafés, restaurants, hostels and
-              tourist destinations.
-            </p>
-            <p className="mt-3 text-sm text-slate-500">
-              Best for: Social travellers and people who want destination-based work.
-            </p>
-            <Link
-              href="/search?destination=Split"
-              className="mt-5 inline-block rounded-2xl border px-5 py-3 font-bold hover:bg-blue-50"
-            >
-              Search hospitality jobs
-            </Link>
-          </div>
-
-          <div className="rounded-3xl bg-white p-6 shadow-lg">
-            <h2 className="text-2xl font-black">Internships</h2>
-            <p className="mt-3 text-slate-600">
-              Internships can help students and graduates gain international
-              experience while building a CV. Look for marketing, finance,
-              business, tourism and operations placements.
-            </p>
-            <p className="mt-3 text-sm text-slate-500">
-              Best for: Students, graduates and early-career professionals.
-            </p>
-            <Link
-              href="/search?destination=London"
-              className="mt-5 inline-block rounded-2xl border px-5 py-3 font-bold hover:bg-blue-50"
-            >
-              Search internships
-            </Link>
-          </div>
-        </section>
-
-        <section className="mt-12 rounded-3xl bg-white p-6 shadow-lg">
-          <h2 className="text-3xl font-black">Tips for better job search results</h2>
-
-          <div className="mt-6 grid gap-5 md:grid-cols-3">
-            <div>
-              <h3 className="text-xl font-black">Use city names</h3>
-              <p className="mt-2 text-slate-600">
-                Job searches usually work best with cities such as Lisbon,
-                Barcelona, Sydney or Dubai rather than broad country names.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-black">Check visa rules</h3>
-              <p className="mt-2 text-slate-600">
-                Always check official visa and work-rights guidance before
-                applying for jobs abroad.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-black">Plan around seasons</h3>
-              <p className="mt-2 text-slate-600">
-                Hospitality and tourism roles are often strongest before and
-                during peak travel seasons.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="mt-12 rounded-3xl bg-slate-950 p-8 text-white shadow-lg">
+        <section className="mt-14 rounded-3xl bg-white p-8 shadow-lg">
           <h2 className="text-3xl font-black">
-            Want to work and travel in the sun?
+            Tips for finding jobs abroad
           </h2>
 
-          <p className="mt-3 max-w-2xl text-slate-300">
-            Use the route generator to find sunny destinations, then search for
-            flights, stays and job opportunities in one place.
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <div>
+              <h3 className="text-2xl font-black text-blue-600">
+                Search by city
+              </h3>
+
+              <p className="mt-3 text-slate-600">
+                Job search results usually work best when using city names such
+                as Lisbon, Sydney or Barcelona.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-black text-blue-600">
+                Check visa rules
+              </h3>
+
+              <p className="mt-3 text-slate-600">
+                Always check work rights and visa requirements before travelling
+                or applying for roles abroad.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-black text-blue-600">
+                Travel season matters
+              </h3>
+
+              <p className="mt-3 text-slate-600">
+                Hospitality and tourism roles are often easier to find before
+                peak travel seasons.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-14 rounded-3xl bg-slate-950 p-8 text-white shadow-lg">
+          <h2 className="text-3xl font-black">
+            Combine work and travel with Kuafu
+          </h2>
+
+          <p className="mt-4 max-w-2xl text-slate-300">
+            Discover sunny destinations, search for jobs abroad and build your
+            own route around the world.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -157,14 +194,14 @@ export default function JobsPage() {
               href="/route-generator"
               className="rounded-2xl bg-blue-600 px-6 py-4 font-bold text-white hover:bg-blue-700"
             >
-              Try the Route Generator
+              Try Route Generator
             </Link>
 
             <Link
-              href="/search"
+              href="/destinations"
               className="rounded-2xl bg-white px-6 py-4 font-bold text-slate-950"
             >
-              Start searching
+              Explore Destinations
             </Link>
           </div>
         </section>
