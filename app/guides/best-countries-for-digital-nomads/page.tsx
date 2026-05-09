@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 const countries = [
   {
     name: "Portugal",
-    flag: "🇵🇹",
     image: "/images/guides/digital-nomads/portugal.jpg",
     budget: "£1,300–£2,200/month",
     bestFor: "Remote workers, café culture and coastal living",
@@ -20,7 +19,6 @@ const countries = [
   },
   {
     name: "Spain",
-    flag: "🇪🇸",
     image: "/images/guides/digital-nomads/spain.jpg",
     budget: "£1,500–£2,600/month",
     bestFor: "Beach lifestyle, city energy and social travellers",
@@ -29,7 +27,6 @@ const countries = [
   },
   {
     name: "Thailand",
-    flag: "🇹🇭",
     image: "/images/guides/digital-nomads/thailand.jpg",
     budget: "£800–£1,800/month",
     bestFor: "Budget travel, adventure and tropical living",
@@ -38,7 +35,6 @@ const countries = [
   },
   {
     name: "Bali, Indonesia",
-    flag: "🇮🇩",
     image: "/images/guides/digital-nomads/bali.jpg",
     budget: "£900–£2,000/month",
     bestFor: "Creatives, entrepreneurs and wellness lifestyle",
@@ -47,7 +43,6 @@ const countries = [
   },
   {
     name: "Australia",
-    flag: "🇦🇺",
     image: "/images/guides/digital-nomads/australia.jpg",
     budget: "£2,000–£4,000/month",
     bestFor: "Working holidays, young professionals and outdoor lifestyle",
@@ -173,6 +168,60 @@ export default function BestCountriesForDigitalNomadsPage() {
           remote work.
         </p>
       </section>
+
+      <section className="mx-auto max-w-4xl px-6 pb-16">
+  <h2 className="text-3xl font-bold text-blue-900">
+    Frequently asked questions
+  </h2>
+
+  <div className="mt-8 space-y-6">
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h3 className="text-xl font-bold text-blue-900">
+        What is the best country for digital nomads?
+      </h3>
+
+      <p className="mt-3 leading-7 text-slate-700">
+        Portugal, Spain, Thailand and Bali are among the most popular digital
+        nomad destinations due to their weather, affordability and remote work
+        communities.
+      </p>
+    </div>
+
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h3 className="text-xl font-bold text-blue-900">
+        Which country is cheapest for digital nomads?
+      </h3>
+
+      <p className="mt-3 leading-7 text-slate-700">
+        Thailand and Bali are generally among the most affordable destinations
+        for digital nomads, especially for long-term stays.
+      </p>
+    </div>
+
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h3 className="text-xl font-bold text-blue-900">
+        What country has the best weather for remote work?
+      </h3>
+
+      <p className="mt-3 leading-7 text-slate-700">
+        Portugal, Spain, Bali and Australia are all known for warm climates,
+        sunshine and outdoor lifestyles that appeal to remote workers.
+      </p>
+    </div>
+
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h3 className="text-xl font-bold text-blue-900">
+        Can UK citizens work remotely abroad?
+      </h3>
+
+      <p className="mt-3 leading-7 text-slate-700">
+        This depends on the visa rules of each country. Many countries now offer
+        digital nomad visas or working holiday visas designed for remote workers
+        and long-term travellers.
+      </p>
+    </div>
+  </div>
+</section>
 
       <section className="bg-blue-900 px-6 py-14 text-white">
         <div className="mx-auto max-w-5xl text-center">
