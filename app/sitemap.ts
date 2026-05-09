@@ -44,6 +44,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   url: `${baseUrl}/guides/where-is-summer-now`,
   lastModified: new Date(),
 },
+{
+  url: `${baseUrl}/guides/where-to-travel-in-december-from-uk`,
+  lastModified: new Date(),
+},
     
   ];
 }
