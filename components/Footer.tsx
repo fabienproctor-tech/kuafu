@@ -48,6 +48,10 @@ export default function Footer() {
             <Link href="/route-generator" className="hover:text-blue-600">
               Route Generator
             </Link>
+
+            <Link href="/privacy" className="hover:text-blue-600">
+  Privacy & Cookies
+</Link>
           </div>
         </div>
 
