@@ -12,7 +12,7 @@ const destinations = [
   {
     name: "Lisbon, Portugal",
     description:
-      "A top destination for digital nomads, remote workers and UK travellers looking for sunshine, culture and affordable living.",
+      "A coastal capital with sunshine, café culture, remote work communities and easy access to beaches.",
     search: "Lisbon",
     image:
       "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?auto=format&fit=crop&w=1200&q=80",
@@ -24,7 +24,7 @@ const destinations = [
   {
     name: "Barcelona, Spain",
     description:
-      "Ideal for city breaks, summer jobs and Mediterranean travel with beaches, nightlife and strong tourism opportunities.",
+      "A Mediterranean city with beaches, nightlife, architecture and strong tourism opportunities.",
     search: "Barcelona",
     image:
       "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1200&q=80",
@@ -36,7 +36,7 @@ const destinations = [
   {
     name: "Sydney, Australia",
     description:
-      "One of the best working holiday destinations for UK travellers with strong hospitality and tourism opportunities.",
+      "A classic working holiday destination with beaches, city life and strong seasonal job opportunities.",
     search: "Sydney",
     image:
       "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1200&q=80",
@@ -48,7 +48,7 @@ const destinations = [
   {
     name: "Bali, Indonesia",
     description:
-      "Popular with remote workers and long-term travellers looking for warm weather, coworking spaces and lower living costs.",
+      "A tropical destination popular with remote workers, creatives and longer-term travellers.",
     search: "Bali",
     image:
       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
@@ -60,7 +60,7 @@ const destinations = [
   {
     name: "Bangkok, Thailand",
     description:
-      "Perfect for budget travel, food culture and exploring Southeast Asia while staying connected to major travel routes.",
+      "A gateway to Southeast Asia with food culture, affordability and strong regional travel links.",
     search: "Bangkok",
     image:
       "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
@@ -72,7 +72,7 @@ const destinations = [
   {
     name: "Dubai, UAE",
     description:
-      "A global travel hub with luxury hotels, remote work opportunities and strong international connections.",
+      "A global hub for sunshine, luxury hotels, stopovers and international work opportunities.",
     search: "Dubai",
     image:
       "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
@@ -83,181 +83,233 @@ const destinations = [
   },
 ];
 
+const relatedGuides = [
+  {
+    title: "Where is summer now?",
+    href: "/guides/where-is-summer-now",
+  },
+  {
+    title: "Where to travel in December from the UK",
+    href: "/guides/where-to-travel-in-december-from-uk",
+  },
+  {
+    title: "Best countries for digital nomads",
+    href: "/guides/best-countries-for-digital-nomads",
+  },
+];
+
 export default function DestinationsPage() {
   return (
-    <main className="min-h-screen bg-blue-50">
+    <>
       <Header />
 
-      <section className="mx-auto max-w-6xl px-5 py-16">
-        <p className="font-black uppercase tracking-widest text-blue-600">
-          Destinations
-        </p>
+      <main className="bg-white text-slate-900">
+        <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-sky-600 px-6 py-20 text-white">
+          <div className="mx-auto max-w-6xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-orange-300">
+              Destinations
+            </p>
 
-        <h1 className="mt-2 text-5xl font-black text-slate-950">
-          Discover places worth following the sun for
-        </h1>
+            <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+              Discover places worth following the sun for
+            </h1>
 
-        <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-          Explore destinations popular with UK travellers, students, remote
-          workers and digital nomads. Search for flights, stays and job
-          opportunities while planning your next route.
-        </p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-blue-100">
+              Explore destinations for sunny escapes, digital nomad lifestyles,
+              work abroad opportunities and longer travel routes.
+            </p>
+          </div>
+        </section>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
-          {destinations.map((destination) => (
-            <div
-              key={destination.name}
-              className="overflow-hidden rounded-3xl bg-white shadow-lg"
-            >
-              <img
-                src={destination.image}
-                alt={destination.name}
-                className="h-64 w-full object-cover"
-              />
+        <section className="mx-auto max-w-7xl px-6 py-16">
+          <div className="grid gap-8 md:grid-cols-2">
+            {destinations.map((destination) => (
+              <article
+                key={destination.name}
+                className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              >
+                <img
+                  src={destination.image}
+                  alt={destination.name}
+                  className="h-64 w-full object-cover"
+                />
 
-              <div className="p-6">
-                <h2 className="text-3xl font-black text-slate-950">
-                  {destination.name}
-                </h2>
+                <div className="p-6">
+                  <h2 className="text-3xl font-bold text-blue-900">
+                    {destination.name}
+                  </h2>
 
-                <p className="mt-4 leading-7 text-slate-600">
-                  {destination.description}
+                  <p className="mt-4 leading-7 text-slate-600">
+                    {destination.description}
+                  </p>
+
+                  <div className="mt-6 grid gap-4 md:grid-cols-2">
+                    <div className="rounded-xl bg-blue-50 p-4">
+                      <p className="text-sm font-semibold text-blue-900">
+                        Best for
+                      </p>
+                      <p className="mt-1 text-slate-700">
+                        {destination.bestFor}
+                      </p>
+                    </div>
+
+                    <div className="rounded-xl bg-orange-50 p-4">
+                      <p className="text-sm font-semibold text-blue-900">
+                        Weather
+                      </p>
+                      <p className="mt-1 text-slate-700">
+                        {destination.weather}
+                      </p>
+                    </div>
+
+                    <div className="rounded-xl bg-slate-50 p-4">
+                      <p className="text-sm font-semibold text-blue-900">
+                        Budget
+                      </p>
+                      <p className="mt-1 text-slate-700">
+                        {destination.budget}
+                      </p>
+                    </div>
+
+                    <div className="rounded-xl bg-blue-50 p-4">
+                      <p className="text-sm font-semibold text-blue-900">
+                        Work
+                      </p>
+                      <p className="mt-1 text-slate-700">{destination.work}</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                    <Link
+                      href={`/search?destination=${destination.search}`}
+                      className="rounded-full bg-orange-500 px-5 py-3 text-center font-semibold text-white hover:bg-orange-600"
+                    >
+                      Search travel
+                    </Link>
+
+                    <Link
+                      href="/route-generator"
+                      className="rounded-full bg-blue-900 px-5 py-3 text-center font-semibold text-white hover:bg-blue-800"
+                    >
+                      Plan route
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-blue-50 px-6 py-16">
+          <div className="mx-auto max-w-7xl">
+            <p className="text-sm font-semibold uppercase tracking-wide text-orange-500">
+              Travel styles
+            </p>
+
+            <h2 className="mt-2 text-3xl font-bold text-blue-900 md:text-4xl">
+              Find the destination that fits your path
+            </h2>
+
+            <div className="mt-8 grid gap-6 md:grid-cols-3">
+              <div className="rounded-2xl bg-white p-6 shadow-sm">
+                <h3 className="text-xl font-bold text-blue-900">
+                  Digital nomad
+                </h3>
+                <p className="mt-3 leading-7 text-slate-600">
+                  Bali, Lisbon and Thailand remain popular for remote workers
+                  due to affordability, weather and coworking communities.
                 </p>
+              </div>
 
-                <div className="mt-5 space-y-2 rounded-2xl bg-blue-50 p-4 text-sm text-slate-600">
-                  <p>
-                    <strong>Best for:</strong> {destination.bestFor}
-                  </p>
-                  <p>
-                    <strong>Weather:</strong> {destination.weather}
-                  </p>
-                  <p>
-                    <strong>Budget:</strong> {destination.budget}
-                  </p>
-                  <p>
-                    <strong>Work:</strong> {destination.work}
-                  </p>
-                </div>
+              <div className="rounded-2xl bg-white p-6 shadow-sm">
+                <h3 className="text-xl font-bold text-blue-900">
+                  Working holiday
+                </h3>
+                <p className="mt-3 leading-7 text-slate-600">
+                  Australia and Canada are popular with UK travellers looking to
+                  work abroad while exploring.
+                </p>
+              </div>
 
-                <div className="mt-6 flex flex-wrap gap-3">
-                  <Link
-                    href={`/search?destination=${destination.search}`}
-                    className="rounded-2xl bg-blue-600 px-5 py-3 font-bold text-white hover:bg-blue-700"
-                  >
-                    Search flights
-                  </Link>
-
-                  <Link
-                    href={`/search?destination=${destination.search}`}
-                    className="rounded-2xl bg-slate-900 px-5 py-3 font-bold text-white"
-                  >
-                    Find hotels
-                  </Link>
-
-                  <Link
-                    href={`/search?destination=${destination.search}`}
-                    className="rounded-2xl border border-slate-300 px-5 py-3 font-bold hover:bg-blue-50"
-                  >
-                    Work abroad
-                  </Link>
-                </div>
+              <div className="rounded-2xl bg-white p-6 shadow-sm">
+                <h3 className="text-xl font-bold text-blue-900">Winter sun</h3>
+                <p className="mt-3 leading-7 text-slate-600">
+                  Dubai, Thailand and the Canary Islands are ideal escapes from
+                  colder UK weather.
+                </p>
               </div>
             </div>
-          ))}
-        </div>
-
-        <section className="mt-14 rounded-3xl bg-white p-8 shadow-lg">
-          <h2 className="text-3xl font-black">Best destination types</h2>
-
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            <div>
-              <h3 className="text-2xl font-black text-blue-600">
-                Digital Nomad
-              </h3>
-              <p className="mt-3 text-slate-600">
-                Bali, Lisbon and Thailand remain popular for remote workers due
-                to affordability, weather and coworking communities.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-black text-blue-600">
-                Working Holiday
-              </h3>
-              <p className="mt-3 text-slate-600">
-                Australia and Canada are among the best countries for UK
-                travellers looking to work abroad while exploring.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-black text-blue-600">
-                Winter Sun
-              </h3>
-              <p className="mt-3 text-slate-600">
-                Dubai, Thailand and the Canary Islands are ideal escapes from
-                cold UK winters.
-              </p>
-            </div>
           </div>
         </section>
 
-        <section className="mt-14 rounded-3xl bg-white p-8 shadow-lg">
-          <h2 className="text-3xl font-black">Related guides</h2>
-
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            <Link
-              href="/guides/where-is-summer-now"
-              className="rounded-2xl border p-5 font-bold hover:bg-blue-50"
-            >
-              Where is summer now?
-            </Link>
-
-            <Link
-              href="/guides/where-to-travel-in-december-from-uk"
-              className="rounded-2xl border p-5 font-bold hover:bg-blue-50"
-            >
-              Where to travel in December from the UK
-            </Link>
-
-            <Link
-              href="/guides/cheap-summer-destinations-europe"
-              className="rounded-2xl border p-5 font-bold hover:bg-blue-50"
-            >
-              Cheap summer destinations in Europe
-            </Link>
-          </div>
-        </section>
-
-        <section className="mt-14 rounded-3xl bg-slate-950 p-8 text-white shadow-lg">
-          <h2 className="text-3xl font-black">
-            Build your own route around the world
-          </h2>
-
-          <p className="mt-4 max-w-2xl text-slate-300">
-            Use Kuafu’s route generator to discover where the sun is, compare
-            destinations and plan your next journey.
-          </p>
-
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link
-              href="/route-generator"
-              className="rounded-2xl bg-blue-600 px-6 py-4 font-bold text-white hover:bg-blue-700"
-            >
-              Try Route Generator
-            </Link>
+        <section className="mx-auto max-w-7xl px-6 py-16">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-orange-500">
+                Related guides
+              </p>
+              <h2 className="mt-2 text-3xl font-bold text-blue-900">
+                Keep exploring
+              </h2>
+            </div>
 
             <Link
               href="/guides"
-              className="rounded-2xl bg-white px-6 py-4 font-bold text-slate-950"
+              className="font-semibold text-blue-900 hover:text-orange-500"
             >
-              Explore Guides
+              View all guides →
             </Link>
           </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {relatedGuides.map((guide) => (
+              <Link
+                key={guide.title}
+                href={guide.href}
+                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              >
+                <h3 className="text-xl font-bold text-blue-900">
+                  {guide.title}
+                </h3>
+                <p className="mt-3 text-slate-600">
+                  Read the Kuafu guide and find your next travel idea.
+                </p>
+              </Link>
+            ))}
+          </div>
         </section>
-      </section>
+
+        <section className="px-6 pb-16">
+          <div className="mx-auto max-w-5xl rounded-3xl bg-blue-900 px-6 py-14 text-center text-white">
+            <h2 className="text-3xl font-bold">
+              Build your own route around the world
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-2xl text-blue-100">
+              Use Kuafu’s route generator to compare destinations and plan your
+              next sunny route.
+            </p>
+
+            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+              <Link
+                href="/route-generator"
+                className="rounded-full bg-orange-500 px-6 py-3 font-semibold text-white hover:bg-orange-600"
+              >
+                Try Route Generator
+              </Link>
+
+              <Link
+                href="/guides"
+                className="rounded-full bg-white px-6 py-3 font-semibold text-blue-900 hover:bg-blue-50"
+              >
+                Explore Guides
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
 
       <Footer />
-    </main>
+    </>
   );
 }
