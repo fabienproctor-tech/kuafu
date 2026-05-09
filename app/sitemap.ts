@@ -48,6 +48,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   url: `${baseUrl}/guides/where-to-travel-in-december-from-uk`,
   lastModified: new Date(),
 },
-    
+    {
+  url: `${baseUrl}/guides/best-countries-to-work-abroad-uk`,
+  lastModified: new Date(),
+},
+
   ];
 }
