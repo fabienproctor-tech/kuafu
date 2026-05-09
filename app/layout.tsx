@@ -17,6 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kuafu",
   description: "Chasing the sun travel platform",
+
+  verification: {
+    google: "Cu1BgCAXYvU7h9XVLfqiLkIW6fVtXjndHh6nwjRZoEI",
+  },
+
   robots: {
     index: false,
     follow: false,
