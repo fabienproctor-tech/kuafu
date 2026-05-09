@@ -73,18 +73,19 @@ export default function WhereIsSummerNowPage() {
       </section>
 
       <section className="mx-auto max-w-5xl space-y-8 px-6 pb-12">
-        {seasons.map((season) => (
+        {seasons.map((season, index) => (
           <article
             key={season.name}
             className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
           >
             <div className="relative mb-6 h-64 overflow-hidden rounded-2xl md:h-80">
               <Image
-                src={season.image}
-                alt={`${season.name} sunny travel destinations`}
-                fill
-                className="object-cover"
-              />
+  src={season.image}
+  alt={`${season.name} sunny travel destinations`}
+  fill
+  priority={index === 0}
+  className="object-cover"
+/>
             </div>
 
             <h2 className="text-2xl font-bold text-blue-900">

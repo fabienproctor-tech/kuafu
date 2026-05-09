@@ -40,6 +40,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   url: `${baseUrl}/guides/cheap-summer-destinations-europe`,
   lastModified: new Date(),
 },
+{
+  url: `${baseUrl}/guides/where-is-summer-now`,
+  lastModified: new Date(),
+},
     
   ];
 }
