@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Image from "next/image";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Where to Travel in December from the UK | Kuafu",
@@ -49,6 +51,8 @@ const destinations = [
 
 export default function DecemberGuidePage() {
   return (
+  <>
+    <Header />
     <main className="bg-white text-slate-800">
       <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-sky-600 px-6 py-20 text-white">
         <div className="mx-auto max-w-5xl">
@@ -226,6 +230,8 @@ export default function DecemberGuidePage() {
           </p>
         </div>
       </section>
-    </main>
+        </main>
+    <Footer />
+  </>
   );
 }
