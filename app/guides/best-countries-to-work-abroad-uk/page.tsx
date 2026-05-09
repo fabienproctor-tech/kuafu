@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Best Countries to Work Abroad for UK Travellers | Kuafu",
   description:
-    "Discover the best countries for UK students and young professionals to work abroad. Find jobs, flights and accommodation with Kuafu.",
+    "Discover the best countries for UK students and young professionals to work abroad. Find work, flights and accommodation with Kuafu.",
 };
 
 export default function WorkAbroadGuidePage() {

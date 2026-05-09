@@ -29,8 +29,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+  url: `${baseUrl}/guides/best-countries-for-digital-nomads`,
+  lastModified: new Date(),
+},
+    {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
     },
+    
   ];
 }

@@ -3,6 +3,10 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 const guides = [
+   {
+    title: "Best Countries for Digital Nomads in 2026",
+    href: "/guides/best-countries-for-digital-nomads",
+  },
   {
     title: "Where is summer now?",
     href: "/guides/where-is-summer-now",
