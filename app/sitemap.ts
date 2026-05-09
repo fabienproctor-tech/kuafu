@@ -31,11 +31,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
   url: `${baseUrl}/guides/best-countries-for-digital-nomads`,
   lastModified: new Date(),
-},
+    },
     {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
     },
+    {
+  url: `${baseUrl}/guides/cheap-summer-destinations-europe`,
+  lastModified: new Date(),
+},
     
   ];
 }
