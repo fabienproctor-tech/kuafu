@@ -87,6 +87,7 @@ export default function WhereIsSummerNowPage() {
   src={season.image}
   alt={`${season.name} sunny travel destinations`}
   fill
+  sizes="(max-width: 768px) 100vw, 1200px"
   priority={index === 0}
   className="object-cover"
 />
@@ -197,6 +198,50 @@ export default function WhereIsSummerNowPage() {
           </div>
         </div>
       </section>
+
+      <section className="mx-auto max-w-5xl px-6 pb-12">
+  <h2 className="text-3xl font-bold text-blue-900">
+    Related guides
+  </h2>
+
+  <div className="mt-6 grid gap-6 md:grid-cols-3">
+    <Link
+      href="/guides/best-countries-for-digital-nomads"
+      className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+    >
+      <h3 className="text-xl font-bold text-blue-900">
+        Best Countries for Digital Nomads
+      </h3>
+      <p className="mt-3 text-slate-600">
+        Explore sunny remote-work destinations.
+      </p>
+    </Link>
+
+    <Link
+      href="/guides/where-is-summer-now"
+      className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+    >
+      <h3 className="text-xl font-bold text-blue-900">
+        Where is summer now?
+      </h3>
+      <p className="mt-3 text-slate-600">
+        Follow the sun throughout the year.
+      </p>
+    </Link>
+
+    <Link
+      href="/guides/best-countries-to-work-abroad-uk"
+      className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+    >
+      <h3 className="text-xl font-bold text-blue-900">
+        Best Countries to Work Abroad
+      </h3>
+      <p className="mt-3 text-slate-600">
+        Compare work abroad destinations.
+      </p>
+    </Link>
+  </div>
+</section>
 
       <section className="bg-blue-900 px-6 py-14 text-white">
         <div className="mx-auto max-w-5xl text-center">
