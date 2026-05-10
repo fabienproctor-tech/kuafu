@@ -25,6 +25,13 @@ const guides = [
       "Compare the best eSIM providers for digital nomads, backpackers and long-term travellers.",
   },
   {
+  title: "Best Travel Insurance for Digital Nomads",
+  href: "/guides/best-travel-insurance-for-digital-nomads",
+  category: "Travel Essentials",
+  description:
+    "Compare travel insurance options for digital nomads, remote workers and long-term travellers.",
+},
+  {
     title: "Working Holiday Visas Explained",
     href: "/guides/working-holiday-visas-explained",
     category: "Work Abroad",

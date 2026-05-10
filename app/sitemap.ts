@@ -74,5 +74,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   changeFrequency: "weekly",
   priority: 0.8,
 },
+{
+  url: "https://www.kuafu.co.uk/guides/best-travel-insurance-for-digital-nomads",
+  lastModified: new Date(),
+  changeFrequency: "weekly",
+  priority: 0.8,
+},
   ];
 }
