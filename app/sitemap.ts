@@ -52,6 +52,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   url: `${baseUrl}/guides/best-countries-to-work-abroad-uk`,
   lastModified: new Date(),
 },
-
+{
+  url: `${baseUrl}/guides/january-winter-sun-destinations`,
+  lastModified: new Date(),
+},
   ];
 }

@@ -38,6 +38,13 @@ const guides = [
     description:
       "Discover affordable sunny destinations across Europe for summer travel.",
   },
+  {
+  title: "January Winter Sun Destinations",
+  href: "/guides/january-winter-sun-destinations",
+  category: "Winter Sun",
+  description:
+    "Discover sunny January destinations for UK travellers, from the Canary Islands to Thailand, Bali and Australia.",
+},
 ];
 
 export default function GuidesPage() {
