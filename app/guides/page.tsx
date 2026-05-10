@@ -6,17 +6,38 @@ const guides = [
   {
     title: "Best Countries for Digital Nomads in 2026",
     href: "/guides/best-countries-for-digital-nomads",
-    category: "Work Abroad",
+    category: "Digital Nomad",
     description:
       "Explore sunny destinations for remote work, lifestyle and long-term travel.",
   },
   {
-  title: "Cheapest Countries to Live Abroad",
-  href: "/guides/cheapest-countries-to-live-abroad",
-  category: "Living Abroad",
-  description:
-    "Compare affordable countries for long-term travel, remote work and digital nomad life.",
-},
+    title: "Cheapest Countries to Live Abroad",
+    href: "/guides/cheapest-countries-to-live-abroad",
+    category: "Living Abroad",
+    description:
+      "Compare affordable countries for long-term travel, remote work and digital nomad life.",
+  },
+  {
+    title: "Best eSIM for Travel",
+    href: "/guides/best-esim-for-travel",
+    category: "Travel Essentials",
+    description:
+      "Compare the best eSIM providers for digital nomads, backpackers and long-term travellers.",
+  },
+  {
+    title: "Working Holiday Visas Explained",
+    href: "/guides/working-holiday-visas-explained",
+    category: "Work Abroad",
+    description:
+      "Learn how working holiday visas work, which countries offer them and how UK travellers can apply.",
+  },
+  {
+    title: "January Winter Sun Destinations",
+    href: "/guides/january-winter-sun-destinations",
+    category: "Winter Sun",
+    description:
+      "Discover sunny January destinations for UK travellers, from the Canary Islands to Thailand, Bali and Australia.",
+  },
   {
     title: "Where is summer now?",
     href: "/guides/where-is-summer-now",
@@ -45,13 +66,6 @@ const guides = [
     description:
       "Discover affordable sunny destinations across Europe for summer travel.",
   },
-  {
-  title: "January Winter Sun Destinations",
-  href: "/guides/january-winter-sun-destinations",
-  category: "Winter Sun",
-  description:
-    "Discover sunny January destinations for UK travellers, from the Canary Islands to Thailand, Bali and Australia.",
-},
 ];
 
 export default function GuidesPage() {

@@ -62,5 +62,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   changeFrequency: "weekly",
   priority: 0.8,
 },
+{
+  url: "https://www.kuafu.co.uk/guides/working-holiday-visas-explained",
+  lastModified: new Date(),
+  changeFrequency: "weekly",
+  priority: 0.8,
+},
+{
+  url: "https://www.kuafu.co.uk/guides/best-esim-for-travel",
+  lastModified: new Date(),
+  changeFrequency: "weekly",
+  priority: 0.8,
+},
   ];
 }
