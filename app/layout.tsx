@@ -1,9 +1,9 @@
-import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieConsent from "@/components/CookieConsent";
+import VercelAnalyticsConsent from "@/components/VercelAnalyticsConsent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,7 +43,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <CookieConsent />
         {children}
-        <Analytics />
+        <VercelAnalyticsConsent />
       </body>
     </html>
   );
