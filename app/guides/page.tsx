@@ -11,6 +11,13 @@ const guides = [
       "Explore sunny destinations for remote work, lifestyle and long-term travel.",
   },
   {
+  title: "Cheapest Countries to Live Abroad",
+  href: "/guides/cheapest-countries-to-live-abroad",
+  category: "Living Abroad",
+  description:
+    "Compare affordable countries for long-term travel, remote work and digital nomad life.",
+},
+  {
     title: "Where is summer now?",
     href: "/guides/where-is-summer-now",
     category: "Seasonal Travel",

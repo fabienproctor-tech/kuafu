@@ -56,5 +56,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   url: `${baseUrl}/guides/january-winter-sun-destinations`,
   lastModified: new Date(),
 },
+{
+  url: "https://www.kuafu.co.uk/guides/cheapest-countries-to-live-abroad",
+  lastModified: new Date(),
+  changeFrequency: "weekly",
+  priority: 0.8,
+},
   ];
 }
