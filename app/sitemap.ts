@@ -152,5 +152,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   changeFrequency: "weekly",
   priority: 0.85,
 },
+{
+  url: "https://www.kuafu.co.uk/destinations/seychelles",
+  lastModified: new Date(),
+  changeFrequency: "weekly",
+  priority: 0.85,
+},
   ];
 }
