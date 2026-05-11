@@ -62,19 +62,6 @@ const destinations = [
     work: "Remote work and freelance roles",
   },
   {
-    name: "Bangkok, Thailand",
-    description:
-      "A gateway to Southeast Asia with food culture, affordability and strong regional travel links.",
-    search: "Bangkok",
-    href: "/destinations/bangkok",
-    image:
-      "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
-    bestFor: "Budget travel and Asia routes",
-    weather: "Hot year-round",
-    budget: "Low to medium",
-    work: "Tourism, teaching and remote work",
-  },
-  {
     name: "Dubai, UAE",
     description:
       "A global hub for sunshine, luxury hotels, stopovers and international work opportunities.",
@@ -151,6 +138,18 @@ const destinations = [
   weather: "Four seasons",
   budget: "Medium to high",
   work: "Working holidays and teaching",
+},
+{
+  name: "Seychelles",
+  description:
+    "A premium island escape known for white-sand beaches, turquoise water, winter sun and slow tropical living.",
+  search: "Seychelles",
+  href: "/destinations/seychelles",
+  image: "/images/destinations/seychelles.jpg",
+  bestFor: "Luxury escapes and winter sun",
+  weather: "Warm tropical climate",
+  budget: "High",
+  work: "Resorts, tourism and remote escape travel",
 },
 ];
 
