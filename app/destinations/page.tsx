@@ -14,6 +14,7 @@ const destinations = [
     description:
       "A coastal capital with sunshine, café culture, remote work communities and easy access to beaches.",
     search: "Lisbon",
+    href: "/destinations/lisbon",
     image:
       "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?auto=format&fit=crop&w=1200&q=80",
     bestFor: "Digital nomads and city breaks",
@@ -26,6 +27,7 @@ const destinations = [
     description:
       "A Mediterranean city with beaches, nightlife, architecture and strong tourism opportunities.",
     search: "Barcelona",
+    href: "/destinations/barcelona",
     image:
       "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1200&q=80",
     bestFor: "Beach city lifestyle",
@@ -38,6 +40,7 @@ const destinations = [
     description:
       "A classic working holiday destination with beaches, city life and strong seasonal job opportunities.",
     search: "Sydney",
+    href: "/destinations/sydney",
     image:
       "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1200&q=80",
     bestFor: "Working holidays",
@@ -50,6 +53,7 @@ const destinations = [
     description:
       "A tropical destination popular with remote workers, creatives and longer-term travellers.",
     search: "Bali",
+    href: "/destinations/bali",
     image:
       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
     bestFor: "Remote work and long stays",
@@ -62,6 +66,7 @@ const destinations = [
     description:
       "A gateway to Southeast Asia with food culture, affordability and strong regional travel links.",
     search: "Bangkok",
+    href: "/destinations/bangkok",
     image:
       "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
     bestFor: "Budget travel and Asia routes",
@@ -74,6 +79,7 @@ const destinations = [
     description:
       "A global hub for sunshine, luxury hotels, stopovers and international work opportunities.",
     search: "Dubai",
+    href: "/destinations/dubai",
     image:
       "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
     bestFor: "Luxury travel and career opportunities",
@@ -175,11 +181,22 @@ export default function DestinationsPage() {
                       <p className="text-sm font-semibold text-blue-900">
                         Work
                       </p>
-                      <p className="mt-1 text-slate-700">{destination.work}</p>
+                      <p className="mt-1 text-slate-700">
+                        {destination.work}
+                      </p>
                     </div>
                   </div>
 
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                    {destination.name === "Bali, Indonesia" && (
+                      <Link
+                        href="/destinations/bali"
+                        className="rounded-full bg-blue-900 px-5 py-3 text-center font-semibold text-white hover:bg-blue-800"
+                      >
+                        Read guide
+                      </Link>
+                    )}
+
                     <Link
                       href={`/search?destination=${destination.search}`}
                       className="rounded-full bg-orange-500 px-5 py-3 text-center font-semibold text-white hover:bg-orange-600"
@@ -189,7 +206,7 @@ export default function DestinationsPage() {
 
                     <Link
                       href="/route-generator"
-                      className="rounded-full bg-blue-900 px-5 py-3 text-center font-semibold text-white hover:bg-blue-800"
+                      className="rounded-full border border-blue-900 px-5 py-3 text-center font-semibold text-blue-900 hover:bg-blue-50"
                     >
                       Plan route
                     </Link>
@@ -232,7 +249,9 @@ export default function DestinationsPage() {
               </div>
 
               <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-xl font-bold text-blue-900">Winter sun</h3>
+                <h3 className="text-xl font-bold text-blue-900">
+                  Winter sun
+                </h3>
                 <p className="mt-3 leading-7 text-slate-600">
                   Dubai, Thailand and the Canary Islands are ideal escapes from
                   colder UK weather.
@@ -248,6 +267,7 @@ export default function DestinationsPage() {
               <p className="text-sm font-semibold uppercase tracking-wide text-orange-500">
                 Related guides
               </p>
+
               <h2 className="mt-2 text-3xl font-bold text-blue-900">
                 Keep exploring
               </h2>
@@ -271,6 +291,7 @@ export default function DestinationsPage() {
                 <h3 className="text-xl font-bold text-blue-900">
                   {guide.title}
                 </h3>
+
                 <p className="mt-3 text-slate-600">
                   Read the Kuafu guide and find your next travel idea.
                 </p>

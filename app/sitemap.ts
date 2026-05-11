@@ -80,5 +80,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   changeFrequency: "weekly",
   priority: 0.8,
 },
+{
+  url: "https://www.kuafu.co.uk/destinations",
+  lastModified: new Date(),
+  changeFrequency: "weekly",
+  priority: 0.9,
+},
+{
+  url: "https://www.kuafu.co.uk/destinations/bali",
+  lastModified: new Date(),
+  changeFrequency: "weekly",
+  priority: 0.85,
+},
   ];
 }
