@@ -15,8 +15,7 @@ const destinations = [
       "A coastal capital with sunshine, café culture, remote work communities and easy access to beaches.",
     search: "Lisbon",
     href: "/destinations/lisbon",
-    image:
-      "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/destinations/lisbon.jpg",
     bestFor: "Digital nomads and city breaks",
     weather: "Warm summers",
     budget: "Medium",
@@ -28,8 +27,7 @@ const destinations = [
       "A Mediterranean city with beaches, nightlife, architecture and strong tourism opportunities.",
     search: "Barcelona",
     href: "/destinations/barcelona",
-    image:
-      "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/destinations/barcelona.jpg",
     bestFor: "Beach city lifestyle",
     weather: "Hot summers",
     budget: "Medium",
@@ -41,8 +39,7 @@ const destinations = [
       "A classic working holiday destination with beaches, city life and strong seasonal job opportunities.",
     search: "Sydney",
     href: "/destinations/sydney",
-    image:
-      "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/destinations/sydney.jpg",
     bestFor: "Working holidays",
     weather: "Summer from December to February",
     budget: "High",
@@ -54,8 +51,7 @@ const destinations = [
       "A tropical destination popular with remote workers, creatives and longer-term travellers.",
     search: "Bali",
     href: "/destinations/bali",
-    image:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/destinations/bali.jpg",
     bestFor: "Remote work and long stays",
     weather: "Warm year-round",
     budget: "Low to medium",
@@ -67,8 +63,7 @@ const destinations = [
       "A global hub for sunshine, luxury hotels, stopovers and international work opportunities.",
     search: "Dubai",
     href: "/destinations/dubai",
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/destinations/dubai.jpg",
     bestFor: "Luxury travel and career opportunities",
     weather: "Very hot",
     budget: "Medium to high",
@@ -80,8 +75,7 @@ const destinations = [
     "A classic Southeast Asia destination with beaches, islands, food culture and strong digital nomad communities.",
   search: "Thailand",
   href: "/destinations/thailand",
-  image:
-    "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+  image: "/images/destinations/thailand.jpg",
   bestFor: "Budget travel and remote work",
   weather: "Hot year-round",
   budget: "Low to medium",
@@ -93,8 +87,7 @@ const destinations = [
     "An affordable destination known for cafés, food culture, beaches and growing digital nomad hubs.",
   search: "Vietnam",
   href: "/destinations/vietnam",
-  image:
-    "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+  image: "/images/destinations/vietnam.jpg",
   bestFor: "Affordable long stays",
   weather: "Warm tropical climate",
   budget: "Low",
@@ -106,8 +99,7 @@ const destinations = [
     "A cinematic coastal city combining beaches, mountains, cafés and winter sun lifestyle.",
   search: "Cape Town",
   href: "/destinations/cape-town",
-  image:
-    "https://images.unsplash.com/photo-1576485375217-d6a95e34d043?auto=format&fit=crop&w=1200&q=80",
+  image: "/images/destinations/cape-town.jpg",
   bestFor: "Winter sun and lifestyle travel",
   weather: "Warm summers",
   budget: "Medium",
@@ -119,8 +111,7 @@ const destinations = [
     "A vibrant destination with beach towns, digital nomad hubs, culture and sunshine year-round.",
   search: "Mexico",
   href: "/destinations/mexico",
-  image:
-    "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?auto=format&fit=crop&w=1200&q=80",
+  image: "/images/destinations/mexico.jpg",
   bestFor: "Long stays and remote work",
   weather: "Warm year-round",
   budget: "Medium",
