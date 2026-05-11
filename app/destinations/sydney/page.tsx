@@ -237,34 +237,48 @@ export default function SydneyDestinationPage() {
             <h2 className="text-3xl font-bold">Related Kuafu guides</h2>
 
             <div className="mt-8 grid gap-4 md:grid-cols-2">
-              <Link
-                href="/guides/working-holiday-visas-explained"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Working Holiday Visas Explained →
-              </Link>
+  <Link
+    href="/destinations/japan"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Japan Travel Guide →
+  </Link>
 
-              <Link
-                href="/guides/best-countries-to-work-abroad-uk"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Best Countries to Work Abroad from the UK →
-              </Link>
+  <Link
+    href="/destinations/thailand"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Thailand Travel Guide →
+  </Link>
 
-              <Link
-                href="/guides/where-is-summer-now"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Where Is Summer Now? →
-              </Link>
+  <Link
+    href="/guides/working-holiday-visas-explained"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Working Holiday Visas Explained →
+  </Link>
 
-              <Link
-                href="/route-generator"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Try the Route Generator →
-              </Link>
-            </div>
+  <Link
+    href="/guides/best-countries-to-work-abroad-uk"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Best Countries to Work Abroad →
+  </Link>
+
+  <Link
+    href="/jobs"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Explore Work Abroad Jobs →
+  </Link>
+
+  <Link
+    href="/route-generator"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Try the Route Generator →
+  </Link>
+</div>
           </div>
         </section>
       </main>

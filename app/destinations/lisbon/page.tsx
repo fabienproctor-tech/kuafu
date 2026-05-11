@@ -237,34 +237,48 @@ export default function LisbonDestinationPage() {
             <h2 className="text-3xl font-bold">Related Kuafu guides</h2>
 
             <div className="mt-8 grid gap-4 md:grid-cols-2">
-              <Link
-                href="/guides/best-countries-for-digital-nomads"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Best Countries for Digital Nomads →
-              </Link>
+  <Link
+    href="/destinations/barcelona"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Barcelona Travel Guide →
+  </Link>
 
-              <Link
-                href="/guides/cheap-summer-destinations-europe"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Cheap Summer Destinations in Europe →
-              </Link>
+  <Link
+    href="/destinations/mexico"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Mexico Travel Guide →
+  </Link>
 
-              <Link
-                href="/guides/best-esim-for-travel"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Best eSIM for Travel →
-              </Link>
+  <Link
+    href="/guides/best-countries-for-digital-nomads"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Best Countries for Digital Nomads →
+  </Link>
 
-              <Link
-                href="/route-generator"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Try the Route Generator →
-              </Link>
-            </div>
+  <Link
+    href="/guides/cheap-summer-destinations-europe"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Cheap Summer Destinations in Europe →
+  </Link>
+
+  <Link
+    href="/guides/best-esim-for-travel"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Best eSIM for Travel →
+  </Link>
+
+  <Link
+    href="/route-generator"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Try the Route Generator →
+  </Link>
+</div>
           </div>
         </section>
       </main>

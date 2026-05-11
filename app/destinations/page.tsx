@@ -192,7 +192,12 @@ export default function DestinationsPage() {
         </section>
 
         <section className="mx-auto max-w-7xl px-6 py-16">
-          <div className="grid gap-8 md:grid-cols-2">
+  <p className="mb-8 max-w-3xl text-lg leading-8 text-slate-700">
+    Start with a destination guide, then move into related Kuafu guides for
+    visas, remote work, winter sun, affordable living and travel essentials.
+  </p>
+
+  <div className="grid gap-8 md:grid-cols-2">
             {destinations.map((destination) => (
               <article
                 key={destination.name}

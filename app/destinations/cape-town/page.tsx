@@ -235,34 +235,48 @@ export default function CapeTownDestinationPage() {
             <h2 className="text-3xl font-bold">Related Kuafu guides</h2>
 
             <div className="mt-8 grid gap-4 md:grid-cols-2">
-              <Link
-                href="/guides/where-is-summer-now"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Where Is Summer Now? →
-              </Link>
+  <Link
+    href="/destinations/seychelles"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Seychelles Travel Guide →
+  </Link>
 
-              <Link
-                href="/guides/where-to-travel-in-december-from-uk"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Where to Travel in December →
-              </Link>
+  <Link
+    href="/destinations/dubai"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Dubai Travel Guide →
+  </Link>
 
-              <Link
-                href="/guides/best-countries-for-digital-nomads"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Best Countries for Digital Nomads →
-              </Link>
+  <Link
+    href="/guides/where-is-summer-now"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Where Is Summer Now? →
+  </Link>
 
-              <Link
-                href="/route-generator"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Try the Route Generator →
-              </Link>
-            </div>
+  <Link
+    href="/guides/where-to-travel-in-december-from-uk"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Where to Travel in December →
+  </Link>
+
+  <Link
+    href="/guides/january-winter-sun-destinations"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    January Winter Sun Destinations →
+  </Link>
+
+  <Link
+    href="/route-generator"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Try the Route Generator →
+  </Link>
+</div>
           </div>
         </section>
       </main>

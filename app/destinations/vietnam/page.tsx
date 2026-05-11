@@ -233,34 +233,48 @@ export default function VietnamDestinationPage() {
             <h2 className="text-3xl font-bold">Related Kuafu guides</h2>
 
             <div className="mt-8 grid gap-4 md:grid-cols-2">
-              <Link
-                href="/guides/best-countries-for-digital-nomads"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Best Countries for Digital Nomads →
-              </Link>
+  <Link
+    href="/destinations/thailand"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Thailand Travel Guide →
+  </Link>
 
-              <Link
-                href="/guides/cheapest-countries-to-live-abroad"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Cheapest Countries to Live Abroad →
-              </Link>
+  <Link
+    href="/destinations/bali"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Bali Travel Guide →
+  </Link>
 
-              <Link
-                href="/guides/best-esim-for-travel"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Best eSIM for Travel →
-              </Link>
+  <Link
+    href="/guides/cheapest-countries-to-live-abroad"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Cheapest Countries to Live Abroad →
+  </Link>
 
-              <Link
-                href="/route-generator"
-                className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
-              >
-                Try the Route Generator →
-              </Link>
-            </div>
+  <Link
+    href="/guides/best-countries-for-digital-nomads"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Best Countries for Digital Nomads →
+  </Link>
+
+  <Link
+    href="/guides/best-esim-for-travel"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Best eSIM for Travel →
+  </Link>
+
+  <Link
+    href="/route-generator"
+    className="rounded-2xl bg-white/10 p-5 hover:bg-white/15"
+  >
+    Try the Route Generator →
+  </Link>
+</div>
           </div>
         </section>
       </main>
