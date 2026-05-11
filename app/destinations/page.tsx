@@ -87,6 +87,71 @@ const destinations = [
     budget: "Medium to high",
     work: "Hospitality, retail and corporate roles",
   },
+  {
+  name: "Thailand",
+  description:
+    "A classic Southeast Asia destination with beaches, islands, food culture and strong digital nomad communities.",
+  search: "Thailand",
+  href: "/destinations/thailand",
+  image:
+    "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+  bestFor: "Budget travel and remote work",
+  weather: "Hot year-round",
+  budget: "Low to medium",
+  work: "Tourism, teaching and remote work",
+},
+{
+  name: "Vietnam",
+  description:
+    "An affordable destination known for cafés, food culture, beaches and growing digital nomad hubs.",
+  search: "Vietnam",
+  href: "/destinations/vietnam",
+  image:
+    "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+  bestFor: "Affordable long stays",
+  weather: "Warm tropical climate",
+  budget: "Low",
+  work: "Remote work and hospitality",
+},
+{
+  name: "Cape Town, South Africa",
+  description:
+    "A cinematic coastal city combining beaches, mountains, cafés and winter sun lifestyle.",
+  search: "Cape Town",
+  href: "/destinations/cape-town",
+  image:
+    "https://images.unsplash.com/photo-1576485375217-d6a95e34d043?auto=format&fit=crop&w=1200&q=80",
+  bestFor: "Winter sun and lifestyle travel",
+  weather: "Warm summers",
+  budget: "Medium",
+  work: "Remote work and hospitality",
+},
+{
+  name: "Mexico",
+  description:
+    "A vibrant destination with beach towns, digital nomad hubs, culture and sunshine year-round.",
+  search: "Mexico",
+  href: "/destinations/mexico",
+  image:
+    "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?auto=format&fit=crop&w=1200&q=80",
+  bestFor: "Long stays and remote work",
+  weather: "Warm year-round",
+  budget: "Medium",
+  work: "Remote work and tourism",
+},
+{
+  name: "Japan",
+  description:
+    "A unique destination for working holidays, city exploration, culture and long-term travel.",
+  search: "Japan",
+  href: "/destinations/japan",
+  image:
+    "https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&w=1200&q=80",
+  bestFor: "Working holidays and culture",
+  weather: "Four seasons",
+  budget: "Medium to high",
+  work: "Working holidays and teaching",
+},
 ];
 
 const relatedGuides = [
@@ -188,29 +253,27 @@ export default function DestinationsPage() {
                   </div>
 
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                    {destination.name === "Bali, Indonesia" && (
-                      <Link
-                        href="/destinations/bali"
-                        className="rounded-full bg-blue-900 px-5 py-3 text-center font-semibold text-white hover:bg-blue-800"
-                      >
-                        Read guide
-                      </Link>
-                    )}
+  <Link
+    href={destination.href}
+    className="rounded-full bg-blue-900 px-5 py-3 text-center font-semibold text-white hover:bg-blue-800"
+  >
+    Read guide
+  </Link>
 
-                    <Link
-                      href={`/search?destination=${destination.search}`}
-                      className="rounded-full bg-orange-500 px-5 py-3 text-center font-semibold text-white hover:bg-orange-600"
-                    >
-                      Search travel
-                    </Link>
+  <Link
+    href={`/search?destination=${destination.search}`}
+    className="rounded-full bg-orange-500 px-5 py-3 text-center font-semibold text-white hover:bg-orange-600"
+  >
+    Search travel
+  </Link>
 
-                    <Link
-                      href="/route-generator"
-                      className="rounded-full border border-blue-900 px-5 py-3 text-center font-semibold text-blue-900 hover:bg-blue-50"
-                    >
-                      Plan route
-                    </Link>
-                  </div>
+  <Link
+    href="/route-generator"
+    className="rounded-full border border-blue-900 px-5 py-3 text-center font-semibold text-blue-900 hover:bg-blue-50"
+  >
+    Plan route
+  </Link>
+</div>
                 </div>
               </article>
             ))}
