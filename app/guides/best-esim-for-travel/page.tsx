@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import AffiliateButton from "@/components/AffiliateButton";
 
 export const metadata: Metadata = {
   title: "Best eSIM for Travel | Kuafu",
@@ -14,34 +16,42 @@ const providers = [
   {
     name: "Airalo",
     image: "/images/guides/esim-travel/phone-abroad.jpg",
+    affiliateUrl: "https://airalo.com",
     bestFor: "Affordable regional and country plans",
     coverage: "Wide global coverage",
     data: "Mostly fixed data plans",
-    text: "Airalo is one of the most well-known travel eSIM providers and is useful for travellers who want simple country or regional data plans.",
+    text:
+      "Airalo is one of the most well-known travel eSIM providers and is useful for travellers who want simple country or regional data plans.",
   },
   {
     name: "Holafly",
     image: "/images/guides/esim-travel/airport-lounge.jpg",
+    affiliateUrl: "https://holafly.com",
     bestFor: "Unlimited data options",
     coverage: "Popular travel destinations",
     data: "Often unlimited data plans",
-    text: "Holafly is popular with travellers who want simple unlimited data options for selected destinations without worrying about running out of data.",
+    text:
+      "Holafly is popular with travellers who want simple unlimited data options for selected destinations without worrying about running out of data.",
   },
   {
     name: "Nomad",
     image: "/images/guides/esim-travel/remote-worker-cafe.jpg",
+    affiliateUrl: "https://www.getnomad.app",
     bestFor: "Flexible travel data plans",
     coverage: "Many major destinations",
     data: "Fixed and regional plans",
-    text: "Nomad offers a range of eSIM plans for frequent travellers, including country-specific and regional options.",
+    text:
+      "Nomad offers a range of eSIM plans for frequent travellers, including country-specific and regional options.",
   },
   {
     name: "Ubigi",
     image: "/images/guides/esim-travel/traveller-maps.jpg",
+    affiliateUrl: "https://www.ubigi.com",
     bestFor: "Frequent travellers and connected devices",
     coverage: "International coverage",
     data: "Fixed data packages",
-    text: "Ubigi is another option for travellers who want data connectivity across multiple countries and devices.",
+    text:
+      "Ubigi is another option for travellers who want data connectivity across multiple countries and devices.",
   },
 ];
 
@@ -104,9 +114,7 @@ export default function BestEsimForTravelPage() {
                 {provider.name}
               </h2>
 
-              <p className="mt-4 leading-7 text-slate-700">
-                {provider.text}
-              </p>
+              <p className="mt-4 leading-7 text-slate-700">{provider.text}</p>
 
               <div className="mt-6 grid gap-4 md:grid-cols-3">
                 <div className="rounded-xl bg-blue-50 p-4">
@@ -129,6 +137,13 @@ export default function BestEsimForTravelPage() {
                   </p>
                   <p className="mt-1 text-slate-700">{provider.data}</p>
                 </div>
+              </div>
+
+              <div className="mt-6">
+                <AffiliateButton
+                  href={provider.affiliateUrl}
+                  label={`Check ${provider.name} →`}
+                />
               </div>
             </article>
           ))}
@@ -221,6 +236,8 @@ export default function BestEsimForTravelPage() {
             </div>
           </div>
         </section>
+
+        <AffiliateDisclosure />
 
         <section className="mx-auto max-w-5xl px-6 pb-12">
           <h2 className="text-3xl font-bold text-blue-900">Related guides</h2>

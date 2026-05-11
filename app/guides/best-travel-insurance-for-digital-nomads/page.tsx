@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import AffiliateButton from "@/components/AffiliateButton";
 
 export const metadata: Metadata = {
   title: "Best Travel Insurance for Digital Nomads in 2026 | Kuafu",
@@ -12,19 +14,19 @@ export const metadata: Metadata = {
 
 const insurers = [
   {
-    name: "SafetyWing",
-    image: "/images/guides/travel-insurance/digital-nomad-laptop.jpg",
-    bestFor: "Digital nomads and long-term travellers",
-    travelStyle: "Monthly, flexible travel cover",
-    strengths:
-      "Good for ongoing travel and remote workers moving between countries.",
-    limitations:
-      "Cover details can vary, so always check exclusions, medical limits and destination rules before buying.",
-    text: "SafetyWing is often considered by digital nomads because it is built around flexible, longer-term travel rather than traditional short holidays.",
-  },
+  name: "SafetyWing",
+  image: "/images/guides/travel-insurance/digital-nomad-laptop.jpg",
+  affiliateUrl: "https://safetywing.com",
+  bestFor: "Digital nomads and long-term travellers",
+  coverage: "Worldwide",
+  flexibility: "Monthly subscription style",
+  text:
+    "SafetyWing is popular with remote workers and long-term travellers who want flexible travel medical coverage while moving between countries.",
+},
   {
     name: "World Nomads",
     image: "/images/guides/travel-insurance/backpacker-airport.jpg",
+    affiliateUrl: "https://www.worldnomads.com",
     bestFor: "Adventure travel and backpacking",
     travelStyle: "Trip-based travel insurance",
     strengths:
@@ -36,6 +38,7 @@ const insurers = [
   {
     name: "Genki",
     image: "/images/guides/travel-insurance/beach-workspace.jpg",
+    affiliateUrl: "https://genki.world",
     bestFor: "Remote workers and modern digital nomads",
     travelStyle: "Health-focused international cover",
     strengths:
@@ -47,6 +50,7 @@ const insurers = [
   {
     name: "Heymondo",
     image: "/images/guides/travel-insurance/travel-documents.jpg",
+    affiliateUrl: "https://heymondo.com",
     bestFor: "Short to medium trips",
     travelStyle: "Flexible travel insurance plans",
     strengths:
@@ -93,19 +97,6 @@ export default function BestTravelInsuranceForDigitalNomadsPage() {
             insurance policy, especially if they are travelling for months,
             moving between countries or working while abroad.
           </p>
-        </section>
-
-        <section className="mx-auto max-w-5xl px-6 pb-12">
-          <div className="relative h-72 overflow-hidden rounded-3xl md:h-[450px]">
-            <Image
-              src="/images/guides/travel-insurance/airport-traveller.jpg"
-              alt="Digital nomad traveller at an airport"
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 1200px"
-              className="object-cover"
-            />
-          </div>
         </section>
 
         <section className="mx-auto max-w-5xl space-y-8 px-6 pb-12">
@@ -161,6 +152,14 @@ export default function BestTravelInsuranceForDigitalNomadsPage() {
                 </p>
                 <p className="mt-1 text-slate-700">{insurer.limitations}</p>
               </div>
+
+              <div className="mt-6">
+  <AffiliateButton
+    href={insurer.affiliateUrl}
+    label={`Explore ${insurer.name} →`}
+  />
+</div>
+              
             </article>
           ))}
         </section>
@@ -284,6 +283,8 @@ export default function BestTravelInsuranceForDigitalNomadsPage() {
           </div>
         </section>
 
+        <AffiliateDisclosure />
+
         <section className="mx-auto max-w-5xl px-6 pb-12">
           <h2 className="text-3xl font-bold text-blue-900">Related guides</h2>
 
@@ -325,6 +326,7 @@ export default function BestTravelInsuranceForDigitalNomadsPage() {
             </Link>
           </div>
         </section>
+
 
         <section className="bg-blue-900 px-6 py-14 text-white">
           <div className="mx-auto max-w-5xl text-center">
